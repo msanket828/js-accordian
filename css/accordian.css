@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* heading starts here*/
+.wrapper {
+	width: 80%;
+	margin: 50px auto;
+}
+
+.wrapper > h3 {
+	font-size: 30px;
+	text-transform: capitalize;
+	margin: 0 0 50px 0;
+	text-align: center;
+	background: #ddd;
+}
+
+.accordian {
+	width:50%;
+	margin: 0 auto;
+}
+
+.accordian li {
+	margin: 20px 0;
+	list-style: none;
+}
+
+.acc-btn {		
+	position: relative;
+	font-size: 20px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	padding: 5px 10px;
+}
+
+.acc-btn a {
+	text-decoration: none;	
+	text-transform: capitalize;
+	color: #d65c5c;			
+}
+
+
+.acc-btn.active {
+	transition: all 0.5s ease;
+	background: #000;
+	color: #fff;
+}
+
+.acc-content {	
+	margin:30px 0 0 0;
+}
+
+.hidecontent {
+	display: none;
+}
+
+
+@media only screen and (max-width: 995px) {
+	.accordian {
+		width: 80%;
+	}
+}
